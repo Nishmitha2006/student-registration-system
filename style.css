@@ -1,0 +1,125 @@
+
+/* Page styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #eaf2f8;
+    margin: 0;
+    padding: 30px;
+}
+
+/* Main heading */
+h1 {
+    text-align: center;
+    color: #1a5276;
+}
+
+/* Form styling */
+form {
+    background-color: white;
+    width: 400px;
+    margin: 20px auto;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px gray;
+}
+
+/* Labels */
+label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+/* Input fields */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+/* Radio buttons and checkboxes */
+input[type="radio"],
+input[type="checkbox"] {
+    margin: 10px 5px;
+}
+
+/* Register button */
+button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 20px;
+    background-color: #2874a6;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* Button hover effect */
+button:hover {
+    background-color: #154360;
+}
+
+/* Result section */
+#result {
+    background-color: white;
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+}
+ 
+/* Responsive design */
+@media (max-width: 500px) {
+    body {
+        padding: 10px;
+    }
+
+    form {
+        width: auto;
+    }
+}
+#result {
+    white-space: pre-line;
+    line-height: 1.8;
+    color: #154360;
+    font-weight: bold;
+}
+#clearBtn {
+    background-color: #e74c3c;
+}
+
+#clearBtn:hover {
+    background-color: #c0392b;
+}
+/* Register button */
+button[type="submit"] {
+    background-color: #2874a6;
+    color: white;
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Clear button */
+#clearBtn {
+    background-color: #e74c3c;
+    color: white;
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}

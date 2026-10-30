@@ -1,0 +1,72 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Registration</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<link rel="stylesheet" href="style.css">
+<body>
+
+    <h1>Student Registration Form</h1>
+
+    <form id="studentForm">
+
+        <label>Full Name:</label>
+        <input type="text" id="name" required>
+
+        <label>Email:</label>
+        <input type="email" id="email" required>
+
+        <label>Phone Number:</label>
+        <input
+    type="tel"
+    id="phone"
+    pattern="[0-9]{10}"
+    maxlength="10"
+    minlength="10"
+    title="Please enter exactly 10 digits"
+    required
+>
+
+        <label>Date of Birth:</label>
+        <input type="date" id="dob" required max="2026-10-31">
+
+        <label>Gender:</label>
+        <input type="radio" name="gender" value="Male"> Male
+        <input type="radio" name="gender" value="Female"> Female
+        <input type="radio" name="gender" value="Other"> Other
+
+        <br><br>
+
+        <label>Select Course:</label>
+        <input type="checkbox" name="course" value="BCA"> BCA
+        <input type="checkbox" name="course" value="BBA"> BBA
+        <input type="checkbox" name="course" value="B.Tech"> B.Tech
+        <input type="checkbox" name="course" value="MCA"> MCA
+
+        <br><br>
+
+        <label>Department:</label>
+        <select id="department" required>
+            <option value="">Select Department</option>
+            <option value="Computer Science">Computer Science</option>
+            <option value="Commerce">Commerce</option>
+            <option value="Management">Management</option>
+            <option value="Electronics">Electronics</option>
+        </select>
+
+        <br><br>
+
+      <button type="submit">Register</button>
+
+<button type="button" id="clearBtn">Clear Form</button>
+
+    </form>
+
+    <div id="result"></div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
